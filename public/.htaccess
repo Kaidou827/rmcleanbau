@@ -1,0 +1,23 @@
+# Salomon Courier GmbH – React SPA (Vite)
+# Leitet alle Pfade ohne echte Datei auf index.html (Client-Routing).
+# Liegt in public/ und wird nach dist/ kopiert.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Wenn die Seite in einem Unterordner liegt, z. B. https://domain.de/projekt/
+  # RewriteBase /projekt/
+
+  # Bereits index.html
+  RewriteRule ^index\.html$ - [L]
+
+  # Echte Dateien und Verzeichnisse (Assets, api/*.php, …) unverändert ausliefern
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Alle anderen URLs → SPA
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Optional: index.html als Standard-Dokument
+DirectoryIndex index.html

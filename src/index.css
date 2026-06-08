@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    letter-spacing: -0.002rem;
+  }
+
+  body {
+    font-family: 'Manrope', sans-serif !important;
+    letter-spacing: -0.002rem;
+    background-color: #f0f8ff;
+    color: #00263d;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.002rem;
+  }
+}
