@@ -29,7 +29,7 @@ if (!$name || !$email || !$message || !filter_var($email, FILTER_VALIDATE_EMAIL)
     exit;
 }
 
-$to = 'info@rm-cleanbau.de';
+$to = 'info@rmcleanbau.de';
 $subjectLine = $subject ? $subject : 'Allgemeine Anfrage';
 $headers = "From: website@rm-cleanbau.de\r\nReply-To: $email\r\nContent-Type: text/plain; charset=UTF-8";
 $body = "Name: $name\nE-Mail: $email\nTelefon: $phone\nBetreff: $subjectLine\n\nNachricht:\n$message";

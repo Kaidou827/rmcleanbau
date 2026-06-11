@@ -1,7 +1,7 @@
 export const COMPANY_NAME = 'RM Clean Bau GmbH'
 export const COMPANY_LEGAL_NAME = 'RM Clean Bau GmbH'
 export const COMPANY_DOMAIN = 'www.rm-cleanbau.de'
-export const CONTACT_EMAIL = 'info@rm-cleanbau.de'
+export const CONTACT_EMAIL = 'info@rmcleanbau.de'
 
 export const ADDRESS_STREET = 'Romaneystraße 5a'
 export const ADDRESS_ZIP_CITY = '51063 Köln'
@@ -12,7 +12,7 @@ export const COMMERCIAL_REGISTER = 'HRB 99035'
 export const REGISTER_COURT = 'Amtsgericht Köln'
 export const TAX_NUMBER = 'wird nachgereicht'
 export const VAT_ID = 'wird nachgereicht'
-export const MANAGEMENT = 'wird nachgereicht'
+export const MANAGEMENT = 'Jannes Roth'
 
 /** German mobile 0152 1507 6331 → international without + for wa.me */
 export const WHATSAPP_E164 = '4915215076331'
